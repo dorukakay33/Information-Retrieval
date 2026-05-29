@@ -1,6 +1,6 @@
 # Information Retrieval
 
-This repository contains a series of Information Retrieval assignments completed as part of my Artificial Intelligence coursework. The project focuses on building, improving, evaluating, and analysing a basic information retrieval system using a scientific-paper dataset from PubMed.
+This repository contains a series of Information Retrieval assignments. The project focuses on building, improving, evaluating, and analysing a basic information retrieval system using a scientific-paper dataset from PubMed.
 
 The notebooks follow a step-by-step workflow: first inspecting the dataset, then building a simple inverted index, improving retrieval with preprocessing and ranking, evaluating search results, applying link analysis, and finally using clustering/topic modeling to explore document themes.
 
@@ -86,6 +86,3 @@ This notebook uses clustering and topic modeling to explore groups and themes wi
 
 This project is relevant to applied AI and document-based systems because many AI tools depend on retrieving the right information before producing useful output. The same general logic is important in search engines, internal knowledge systems, document assistants, and retrieval-augmented generation workflows.
 
-## Notes
-
-This repository is based on academic coursework and has been organized as a portfolio project to demonstrate practical Information Retrieval skills.
