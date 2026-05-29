@@ -79,7 +79,3 @@ This project demonstrates practical experience with retrieving and organizing in
 * NetworkX
 * NLTK / text preprocessing tools
 * matplotlib
-
-## Notes
-
-This repository is based on academic coursework and has been organized as a portfolio project to demonstrate applied Information Retrieval skills.
