@@ -1,14 +1,14 @@
-# Information Retrieval Search Engine
+# Information Retrieval
 
-This repository contains a series of Information Retrieval assignments focused on building, improving, evaluating, and analysing a small search engine pipeline using a scientific-paper dataset.
+This repository contains a series of Information Retrieval assignments completed as part of my Artificial Intelligence coursework. The project focuses on building, improving, evaluating, and analysing a basic information retrieval system using a scientific-paper dataset from PubMed.
 
-The project covers the main stages of an information retrieval workflow: inspecting a document collection, building a basic retrieval system, improving search quality, evaluating results, analysing citation/link structures, and applying clustering methods to explore document groups.
+The notebooks follow a step-by-step workflow: first inspecting the dataset, then building a simple inverted index, improving retrieval with preprocessing and ranking, evaluating search results, applying link analysis, and finally using clustering/topic modeling to explore document themes.
 
 ## Project Overview
 
-The goal of this project was to understand how search systems retrieve relevant documents from a collection. The notebooks follow a step-by-step workflow, starting from dataset inspection and ending with analysis and clustering.
+The main goal of this project was to understand how search systems retrieve relevant documents from a collection of scientific texts. The dataset consists of article abstracts from PubMed in the Life Sciences domain.
 
-This project is especially relevant to document-based AI systems and retrieval-augmented generation (RAG), where retrieving the right information from a document collection is an important step before generating a useful answer.
+The project covers both the technical side of information retrieval, such as indexing and ranking, and the analytical side, such as evaluating search results and exploring document relationships through networks and topics.
 
 ## Repository Structure
 
@@ -23,59 +23,69 @@ Information-Retrieval/
 │   ├── 05_analysis.ipynb
 │   └── 06_clustering.ipynb
 │
+├── requirements.txt
 └── README.md
 ```
 
 ## Notebook Descriptions
 
-### 01 — Dataset Inspection
+### 01 — Inspecting the Dataset
 
-Initial exploration of the scientific-paper dataset. This notebook focuses on understanding the structure of the corpus, including document metadata, abstracts, summaries, and basic collection statistics.
+This notebook introduces the PubMed scientific-paper dataset and explores its structure. It includes basic dataset statistics such as papers per year, papers per author, authors per paper, and words in titles.
 
-### 02 — Building a Search Index
+### 02 — Building a Simple Index
 
-Construction of a basic search index for keyword-based document retrieval. This step introduces the core logic behind simple search engines, where query terms are matched to relevant documents.
+This notebook builds a basic inverted index using the titles and abstracts of the papers. It introduces the core logic behind keyword-based retrieval, where terms are mapped to the documents in which they appear.
 
-### 03 — Improving Retrieval
+### 03 — Improving the Index
 
-Improvement of the retrieval system using preprocessing and ranking-related techniques. This step focuses on making the search results more relevant and useful.
+This notebook improves the search index and query functions from the previous assignment. It focuses on preprocessing issues such as punctuation and singular/plural word forms, and introduces stemming and ranking methods to improve search results.
 
-### 04 — Evaluating Retrieval Results
+### 04 — Evaluating Search Engines
 
-Evaluation of the retrieval system using relevance judgments and retrieval quality measures. This step highlights the importance of measuring whether the search system returns useful results for a given information need.
+This notebook focuses on evaluating search engine results. It introduces relevance assessments and uses Cohen’s Kappa to measure agreement between human assessors on whether retrieved documents are relevant or not.
 
-### 05 — Link and Network Analysis
+### 05 — Link Analysis
 
-Analysis of citation and network structures related to the document collection. This step explores how relationships between documents can provide additional signals for understanding relevance and influence.
+This notebook applies network-based methods to scientific papers. It works with co-authorship and citation networks and uses link analysis concepts such as PageRank to explore how network structure can support search and ranking.
 
-### 06 — Document Clustering
+### 06 — Clustering and Topic Modeling
 
-Application of clustering methods to group related documents and explore hidden themes in the document collection. This step connects information retrieval with broader NLP and document analysis techniques.
+This notebook uses clustering and topic modeling to explore groups and themes within the document collection. It prepares the document data in matrix form and applies topic modeling to identify broader topics in the scientific-paper dataset.
 
 ## Skills Demonstrated
 
 * Information retrieval
-* Search engine pipeline development
+* Dataset inspection
+* Inverted index construction
 * Text preprocessing
-* Indexing and keyword-based retrieval
-* Ranking and retrieval improvement
-* Retrieval evaluation
-* Link and network analysis
-* Document clustering
+* Tokenization and stemming
+* Boolean-style retrieval
+* Ranking search results
+* Search engine evaluation
+* Relevance assessment
+* Cohen’s Kappa
+* Citation and co-authorship network analysis
+* PageRank / link analysis
+* Topic modeling
+* Document exploration
+* Python and Jupyter Notebook
+
+## Tools and Libraries
+
 * Python
 * Jupyter Notebook
+* NLTK
+* scikit-learn
+* NetworkX
+* NumPy
+* Matplotlib
+* lda
 
 ## Relevance to Applied AI
 
-This project demonstrates practical experience with retrieving and organizing information from large text collections. These skills are relevant to AI-powered document assistants, internal knowledge systems, search tools, and RAG-style applications where a system needs to find the right information before generating or presenting an answer.
+This project is relevant to applied AI and document-based systems because many AI tools depend on retrieving the right information before producing useful output. The same general logic is important in search engines, internal knowledge systems, document assistants, and retrieval-augmented generation workflows.
 
-## Tools and Technologies
+## Notes
 
-* Python
-* Jupyter Notebook
-* pandas
-* numpy
-* scikit-learn
-* NetworkX
-* NLTK / text preprocessing tools
-* matplotlib
+This repository is based on academic coursework and has been organized as a portfolio project to demonstrate practical Information Retrieval skills.
